@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qiW-Vl-1QM" customClass="LoadingView" customModule="DaCodesTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7Zk-XD-iNV">
+                    <rect key="frame" x="197" y="15" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fetching data..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPi-IM-ngY">
+                    <rect key="frame" x="148" y="42" width="118" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="BGq-WO-eLb"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7Zk-XD-iNV" firstAttribute="centerX" secondItem="qiW-Vl-1QM" secondAttribute="centerX" id="4NI-vD-vhU"/>
+                <constraint firstItem="7Zk-XD-iNV" firstAttribute="top" secondItem="qiW-Vl-1QM" secondAttribute="top" constant="15" id="AK4-hU-ieJ"/>
+                <constraint firstItem="XPi-IM-ngY" firstAttribute="centerX" secondItem="qiW-Vl-1QM" secondAttribute="centerX" id="Etf-Cf-V4t"/>
+                <constraint firstItem="XPi-IM-ngY" firstAttribute="top" secondItem="7Zk-XD-iNV" secondAttribute="bottom" constant="7" id="m59-5E-6v2"/>
+                <constraint firstItem="BGq-WO-eLb" firstAttribute="bottom" secondItem="XPi-IM-ngY" secondAttribute="bottom" constant="15" id="wfb-y7-SWZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activityIndicator" destination="7Zk-XD-iNV" id="A9d-6Q-BNU"/>
+            </connections>
+            <point key="canvasLocation" x="164" y="141"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

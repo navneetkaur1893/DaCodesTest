@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ErrorView" customModule="DaCodesTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="523" height="107"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVM-9a-Pfh">
+                    <rect key="frame" x="0.0" y="0.0" width="523" height="107"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AS-MK-Imt">
+                            <rect key="frame" x="0.0" y="-2" width="523" height="109"/>
+                            <state key="normal" title="We are sorry! Error loading information, tap to try again."/>
+                            <connections>
+                                <action selector="tappedErroButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="zd5-e9-dcR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="2AS-MK-Imt" firstAttribute="top" secondItem="EVM-9a-Pfh" secondAttribute="top" constant="-2" id="MNV-Mu-3Lx"/>
+                        <constraint firstItem="2AS-MK-Imt" firstAttribute="leading" secondItem="EVM-9a-Pfh" secondAttribute="leading" id="Uzj-0z-USW"/>
+                        <constraint firstAttribute="trailing" secondItem="2AS-MK-Imt" secondAttribute="trailing" id="Ygf-VR-rwQ"/>
+                        <constraint firstAttribute="bottom" secondItem="2AS-MK-Imt" secondAttribute="bottom" id="nEr-kL-wVU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="EVM-9a-Pfh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Mu-7s-ujJ"/>
+                <constraint firstAttribute="trailing" secondItem="EVM-9a-Pfh" secondAttribute="trailing" id="DhZ-bb-G64"/>
+                <constraint firstAttribute="bottom" secondItem="EVM-9a-Pfh" secondAttribute="bottom" id="Gsd-fj-uau"/>
+                <constraint firstItem="EVM-9a-Pfh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Pfg-wl-6c9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleButton" destination="2AS-MK-Imt" id="yvl-O9-iOV"/>
+            </connections>
+            <point key="canvasLocation" x="1432.608695652174" y="-117.52232142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
